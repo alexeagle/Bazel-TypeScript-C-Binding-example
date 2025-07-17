@@ -1,0 +1,12 @@
+{
+    "name": "node_app",
+    "private": true,
+    "dependencies": {
+        "bindings": "^1.5.0",
+        "adder_lib": "workspace:*"
+    },
+    "devDependencies": {
+        "@types/bindings": "^1.5.5",
+        "@types/node": "^20.0.0"
+    }
+}

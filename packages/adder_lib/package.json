@@ -1,0 +1,5 @@
+{
+    "name": "adder_lib",
+    "private": true,
+    "types": "adder.d.ts"
+}
