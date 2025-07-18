@@ -34,15 +34,12 @@ alexeagle@aspect-build type_script_c_make.js_example % file bazel-bin/adder_lib/
 bazel-bin/adder_lib/libadder_binding.dylib: Mach-O 64-bit dynamically linked shared library arm64
 ```
 
-## The Node.js program
-
-We can now build and run the Node.js program, see packages/node_app.
+## The Node.js binding
 
 First we use pnpm workspaces to declare a dependency:
 ```
  "dependencies": {
         "bindings": "^1.5.0",
-        "adder_lib": "workspace:*"
         ...
 ```
 
@@ -51,7 +48,7 @@ then use the `bindings` library to load `adder.node` which is a copy of our dyna
 ```
 % bazel run packages/node_app
 INFO: Running command line: bazel-bin/packages/node_app/node_app_/node_app
-5 + 3 = 8
+1 + 2 + 3 = 6
 ```
 
 There, our typescript program is calling our C code.

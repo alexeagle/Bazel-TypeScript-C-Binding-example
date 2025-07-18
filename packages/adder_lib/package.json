@@ -1,5 +1,13 @@
 {
     "name": "adder_lib",
     "private": true,
-    "types": "adder.d.ts"
+    "main": "adder.js",
+    "types": "adder.d.ts",
+    "dependencies": {
+        "bindings": "^1.5.0"
+    },
+    "devDependencies": {
+        "@types/bindings": "^1.5.5",
+        "@types/node": "^20.0.0"
+    }
 }

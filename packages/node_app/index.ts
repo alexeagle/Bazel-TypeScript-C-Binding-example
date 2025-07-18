@@ -1,9 +1,8 @@
-import type adder from "adder_lib";
-const addon: typeof adder = require('bindings')('adder');
+import { adder } from "adder_lib";
 
-function do_add(a: number, b: number): number {
-    return addon.add(a, b);
+function add_three(a: number, b: number, c: number): number {
+    return adder.add(adder.add(a, b), c);
 }
 
 // Example usage
-console.log(`5 + 3 = ${do_add(5, 3)}`);
+console.log(`1 + 2 + 3 = ${add_three(1, 2, 3)}`);
