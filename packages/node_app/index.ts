@@ -1,4 +1,4 @@
-import { adder } from "adder_lib";
+import { adder } from "libadder";
 
 function add_three(a: number, b: number, c: number): number {
     return adder.add(adder.add(a, b), c);

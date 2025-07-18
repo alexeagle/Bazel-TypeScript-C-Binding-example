@@ -2,7 +2,7 @@
     "name": "node_app",
     "private": true,
     "dependencies": {
-        "adder_lib": "workspace:*"
+        "libadder": "workspace:*"
     },
     "devDependencies": {
         "@types/node": "^20.0.0"

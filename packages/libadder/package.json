@@ -1,5 +1,5 @@
 {
-    "name": "adder_lib",
+    "name": "libadder",
     "private": true,
     "main": "adder.js",
     "types": "adder.d.ts",

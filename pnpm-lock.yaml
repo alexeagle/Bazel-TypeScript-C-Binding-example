@@ -27,7 +27,7 @@ importers:
         specifier: ^8
         version: 8.37.0(eslint@9.31.0)(typescript@5.8.3)
 
-  packages/adder_lib:
+  packages/libadder:
     dependencies:
       bindings:
         specifier: ^1.5.0
@@ -42,13 +42,10 @@ importers:
 
   packages/node_app:
     dependencies:
-      adder_lib:
+      libadder:
         specifier: workspace:*
-        version: link:../adder_lib
+        version: link:../libadder
     devDependencies:
-      '@types/bindings':
-        specifier: ^1.5.5
-        version: 1.5.5
       '@types/node':
         specifier: ^20.0.0
         version: 20.19.8
